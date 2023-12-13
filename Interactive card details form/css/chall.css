@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.container{
+    padding: 0;
+    margin: 0 auto;
+}
+.root{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+body::after{
+    content: "";
+    background-image:url(../images/bg-main-desktop.8bf4510a.png);
+    background-size: cover;
+    z-index: -100;
+    width: 32.5%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+.landing{
+    color: white;
+    background-image: url(../images/bg-card-front.5aca8db4.png);
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 90px;
+    left: 141px;
+    padding-top: 105px;
+    
+}
+.landing .one{
+    /* padding-top: 90px; */
+    padding-left: 35px;
+    font-size: 30px;
+    letter-spacing:3px;
+    word-spacing: 7px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.landing .otherspan{
+display:flex;
+justify-content: space-between;
+padding-left: 35px;
+padding-right: 35px;
+font-size: 19px;
+font-weight: bold;
+font-family: sans-serif;
+padding-top: 35px;
+}
+.landing2{
+    background-image: url(../images/bg-card-back.503939c0.png);
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 407px;
+    left: 203px;
+}
+.landing2 span{
+    font-size: 30px;
+    letter-spacing:3px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 54px;
+    top: 104px;
+}
+.card .form{
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    margin-left: 20%;
+    padding: 1rem;
+}
+label{
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+label input{
+    width: 440px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: gray;
+    padding: 15px;
+}
+label input:hover{
+border-color: blue ;
+}
+.third_label,
+.third_label .mm{
+    display: flex;
+    gap: 10px;
+}
+.third_label .first,
+.third_label .Sec{
+    width: 110px;
+    height: 45px;
+}
+.third_label .third{
+    width: 200px;
+}
+button{
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: black;
+    width: 440px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(24, 20, 55);
+}
+@media (max-width:750px) {
+    body::after{
+        content: "";
+        background-image:url(../images/bg-main-desktop.8bf4510a.png);
+        z-index: -100;
+        width: 100%;
+        height: 50%;
+        padding-left: 100px;
+    }
+    .landing{
+        background-image: url(../images/bg-card-front.5aca8db4.png);
+        width: 427px;
+        height: 225px;
+        position: absolute;
+        top: 250px;
+        left: 121px;
+        border-radius: 7px;
+    }
+    .landing2{
+        background-image: url(../images/bg-card-back.503939c0.png);
+        width: 427px;
+        height: 225px;
+        position: absolute;
+        top: 70px;
+        left: 233px;
+        border-radius: 7px;
+        z-index: -1;
+    }
+    .card .form{
+        /* margin-left: 50px; */
+        margin-top: 500px;
+       
+        
+    }
+    label{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-left:-225px;
+    }
+    label input{
+        width: 600px;
+        height: 45px;
+        border-radius: 7px;
+        border-color: gray;
+        padding: 15px;
+        
+    }
+    .third_label .last_label{
+        margin-left: 20px;
+        width: 200px;
+       
+    }
+    button{
+        margin-left:-225px;
+        width: 600px;
+    }
+}
+
+

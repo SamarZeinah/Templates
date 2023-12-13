@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.container{
+    padding: 0;
+    margin: 0 auto;
+}
+.root{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+body::after{
+    content: "";
+    background-image:url(../images/bg-main-desktop.8bf4510a.png);
+    background-size: cover;
+    z-index: -100;
+    width: 32.5%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+.landing{
+    color: white;
+    background-image: url(../images/bg-card-front.5aca8db4.png);
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 90px;
+    left: 141px;
+    padding-top: 105px;
+    
+}
+.landing .one{
+    /* padding-top: 90px; */
+    padding-left: 35px;
+    font-size: 30px;
+    letter-spacing:3px;
+    word-spacing: 7px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.landing .otherspan{
+display:flex;
+justify-content: space-between;
+padding-left: 35px;
+padding-right: 35px;
+font-size: 19px;
+font-weight: bold;
+font-family: sans-serif;
+padding-top: 35px;
+}
+.landing2{
+    background-image: url(../images/bg-card-back.503939c0.png);
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 407px;
+    left: 203px;
+}
+.landing2 span{
+    font-size: 30px;
+    letter-spacing:3px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 54px;
+    top: 104px;
+}
+.landing3 .page .icon{
+    margin-left: 100px;
+    margin-top: -30px;
+    
+}
+.landing3 .page h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 25px;
+    text-align: center;
+}
+.landing3 .page p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+    margin-top: 25px;
+}
+button{
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight:bold;
+    font-family: sans-serif;
+    width: 300px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* margin-left: 9px; */
+}
+@media (max-width:750px) {
+    body::after{
+        content: "";
+        background-image:url(../images/bg-main-desktop.8bf4510a.png);
+        z-index: -100;
+        width: 100%;
+        height: 50%;
+        padding-left: 100px;
+    }
+    .landing{
+        background-image: url(../images/bg-card-front.5aca8db4.png);
+        width: 427px;
+        height: 225px;
+        position: absolute;
+        top: 250px;
+        left: 121px;
+        border-radius: 7px;
+    }
+    .landing2{
+        background-image: url(../images/bg-card-back.503939c0.png);
+        width: 427px;
+        height: 225px;
+        position: absolute;
+        top: 70px;
+        left: 233px;
+        border-radius: 7px;
+        z-index: -1;
+    }
+    .page .info{
+        margin-top: 550px;
+    margin-right: 72px;
+    }
+}
