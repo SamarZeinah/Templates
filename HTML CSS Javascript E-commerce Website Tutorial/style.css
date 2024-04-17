@@ -1,0 +1,239 @@
+body{
+    font-family: 'lato',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* start nav */
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav-top .search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.SearchInput{
+    background-color: gray;
+    border: none;  
+}
+.SearchInput::placeholder{
+    color: lightgray;
+}
+.nav-top .LimitedOffer{
+    font-size:20px ;
+border-bottom: 2px solid green;
+cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.nav-Bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-Bottom ul li{
+    margin-right:50px ;
+    cursor: pointer;
+    color: lightgray;
+
+}
+/* End nav */
+/* start landing */
+.Slider{
+    /* background: url(./images/photo-1604147495798-57beb5d6af73.avif); */
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%); */
+overflow: hidden;
+}
+.landingWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out ; 
+}
+.Slider .landingItem{
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.Slider .landingItem img{
+    z-index: 1;
+}
+
+.Slider .landingItem .SlideBg{
+position: absolute;
+left: 19%;
+width: 750px;
+height: 750px;
+border-radius: 50%;
+}
+.landingItem:nth-child(1) .SlideBg{
+    background-color: green;   
+}
+.landingItem:nth-child(2) .SlideBg{
+    background-color: rebeccapurple;   
+}
+.landingItem:nth-child(3) .SlideBg{
+    background-color: teal;   
+}
+.landingItem:nth-child(4) .SlideBg{
+    background-color: cornflowerblue;   
+}
+.landingItem:nth-child(5) .SlideBg{
+    background-color: rgb(124, 115, 80);   
+}
+.Slider .landingItem h1{
+    position: absolute;
+    color: white;
+top: 18%;
+right:20%;
+font-size: 50px;
+font-weight: bold;
+text-align: center;
+}
+.Slider .landingItem h2{
+    position: absolute;
+    left:9%;
+    top: 10%;
+    color: green;
+    font-size: 50px;
+    font-weight:300;
+    border: 1px solid gray;
+
+}
+.Slider .landingItem:nth-child(1) h2{
+    color: green;
+}
+.Slider .landingItem:nth-child(2) h2{
+    color: rebeccapurple; 
+}
+.Slider .landingItem:nth-child(3) h2{
+    color: teal;
+}
+.Slider .landingItem:nth-child(4) h2{
+    color: cornflowerblue;
+}
+.Slider .landingItem:nth-child(5) h2{
+    color: rgb(124, 115, 80);
+}
+.Slider .landingItem button{
+    position: absolute;
+color: white;
+background-color: black;
+font-size: 30px;
+font-weight: bold;
+border: 1px solid lightgray;
+right: 21%;
+cursor: pointer;
+}
+.Slider .landingItem button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* End landing */
+
+/* start featurs */
+.featureItem img{
+    width: 50px;
+    height: 50px;
+}
+.featurs{
+    margin: 100px 50px 0 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    align-items: center;
+}
+.featureItem h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.featureItem p{
+    color: gray;
+    /* width: 50%; */
+    height: 100px;
+}
+
+/* End featurs */
+
+/* start product */
+.products{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    /* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); */
+}
+.products .productDetails{
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-right:3%;
+
+}
+.products .productDetails h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.products .productDetails h4{
+    font-size: 30px;
+}
+.products .productDetails p{
+color: gray;
+width: 70%;
+height: 100px;
+font-size: 20px;
+margin-bottom: 15px;
+}
+.colors ,
+.sizes{
+    display: flex;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: green;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+.products .productDetails .BuyButton{
+    float: right;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.products .productDetails .BuyButton:hover{
+    background-color: white;
+    color: black;
+}
+/* End product */
